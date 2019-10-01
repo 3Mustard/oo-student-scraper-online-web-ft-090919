@@ -14,7 +14,8 @@ class Student
     @profile_quote = student_hash[:profile_quote]
     @bio = student_hash[:bio]
     @profile_url = student_hash[:profile_url]
-    student_hash.each do |info|
+    student_hash.each do |key,value|
+      self.send(key=)
              
     @@all << self 
   end
